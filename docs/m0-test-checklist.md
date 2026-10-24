@@ -36,8 +36,9 @@ Steps:
 3. Start Pidgin.
 4. Open `Accounts -> Manage Accounts -> Add`.
 5. Confirm that **OpenVK** appears in the protocol list.
-6. Select OpenVK, enter the user's own credentials, and click Add.
-7. Confirm the expected M0 error appears. No network request is made.
+6. Select OpenVK and click Add. For M0, any non-empty placeholder values are
+   enough (for example `testuser` / `testpass`); no network request is made.
+7. Confirm the expected M0 error appears.
 
 Useful checks on the DLL:
 
