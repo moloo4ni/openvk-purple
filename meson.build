@@ -17,8 +17,18 @@ endif
 
 purple_plugindir = purple_dep.get_variable(
   pkgconfig: 'plugindir',
-  default: get_option('libdir') / 'purple-2',
+  default_value: get_option('libdir') / 'purple-2',
 )
+
+pidgin_dep = dependency('pidgin', required: false)
+if pidgin_dep.found()
+  pidgin_datadir = pidgin_dep.get_variable(
+    pkgconfig: 'datadir',
+    default_value: get_option('datadir'),
+  )
+else
+  pidgin_datadir = get_option('datadir')
+endif
 
 plugin_dir = get_option('plugin_dir')
 if plugin_dir == ''
@@ -45,7 +55,7 @@ openvk = shared_module(
   install_dir: plugin_dir,
 )
 
-protocol_icon_dir = get_option('datadir') / 'pixmaps/pidgin/protocols'
+protocol_icon_dir = pidgin_datadir / 'pixmaps/pidgin/protocols'
 foreach size : ['16', '22', '48']
   install_data(
     'data/openvk.png',
