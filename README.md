@@ -98,7 +98,8 @@ Run Pidgin with debug output:
 pidgin.exe -d
 ```
 
-See `docs/windows-build.md` for the full explanation.
+See `docs/windows-build.md` for the full explanation and
+`docs/m0-test-checklist.md` for the acceptance checks.
 
 ## Layout
 
