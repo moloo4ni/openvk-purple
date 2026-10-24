@@ -1,0 +1,13 @@
+build/
+build-win32/
+.deps/
+.cache/
+compile_commands.json
+__pycache__/
+*.pyc
+*.o
+*.so
+*.dll
+*.dll.a
+*.def
+*.log

@@ -1,0 +1,6 @@
+option(
+  'plugin_dir',
+  type: 'string',
+  value: '',
+  description: 'Directory for openvk.so; empty means <libdir>/purple-2',
+)

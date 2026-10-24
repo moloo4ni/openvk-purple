@@ -1,0 +1,14 @@
+BasedOnStyle: GNU
+IndentWidth: 8
+UseTab: Always
+TabWidth: 8
+BreakBeforeBraces: Linux
+ColumnLimit: 100
+AlignAfterOpenBracket: Align
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+DerivePointerAlignment: false
+PointerAlignment: Right
+SpaceAfterCStyleCast: false
+SortIncludes: false
